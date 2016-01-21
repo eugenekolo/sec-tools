@@ -1,0 +1,3 @@
+*.log
+/bin/*
+!/bin/manage-tools.sh

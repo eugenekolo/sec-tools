@@ -1,0 +1,2 @@
+#!/bin/bash
+java -cp $CTF_ROOT/bin/steg-bin steganabara.Steganabara

@@ -1,0 +1,9 @@
+Below are two plaintexts and their corresponding encrypted forms. Both of these plaintexts have been encrypted with RC4 using the same key. xorstrings can be used to XOR the two ciphertexts together and cribdrag can be used to recover the two messages.
+
+------------------
+
+This is some example plaintext that's in encrypted form below.
+Here's another plaintext which is encrypted with the same key.
+
+0837239691e83675960b47a6ce50cb7d74414874d238c182b8e90e9ae4e2f5e2a19cd4127cf5ca5abad8bb0c4c6219ea11767cc88ed676856a544aa0b539
+143a388096f265348b0b5eab8b47936c75504d7f862dd597f1f01296fffef5ffbaddc55b6ca7da44eed8b14f49721df6546634cbc1d77ac86d114daabb39

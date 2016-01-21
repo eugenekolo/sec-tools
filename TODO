@@ -1,0 +1,28 @@
+# TODO
+
+## High level
+* Maybe put *_anal into just tools.
+* Make a sweet README.md
+* add installing package-name:i386
+* Test every package with manage-tools.sh
+* rename dirs into how the tool is usually called, e.g. "hash-identifier" to "hash_id". 
+
+## Maybe? 
+* Go through hacked team
+* add virtualenv set up to the manage-tools setup
+* maybe link popper util bins to /bin
+
+## More than maybe
+* add HashPump
+* add Python_Pin
+* add taintgrind
+* add IDA free
+* put r2 bins into /bin
+
+## Things that are failing/broken
+* qemu install fails
+* PadBuster is broken
+* add pathgrind to /bin
+* stegdetect install fails
+
+
