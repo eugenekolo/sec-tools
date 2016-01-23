@@ -69,7 +69,6 @@ To add a tool (say, named *toolname*), do the following:
 1. Decide what category it falls under. You probably shouldn't create a new one.
 2. Create a `category\toolname` directory.
 3. Create an `install-ctf.sh` script.
-5. (optional) if special uninstall steps are reuired, create an `uninstall` script.
 
 ### Install Scripts
 The install script will be run with `$PWD` being `toolname`. It should install the tool into this directory, in as contained a manner as possible.
