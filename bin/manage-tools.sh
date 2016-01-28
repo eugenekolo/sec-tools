@@ -62,7 +62,7 @@ case $ACTION in
         cd $TOOL
 
         echo "Installing $TOOL"
-        if ./install-ctf.sh >>install-ctf.log 2>&1
+        if ./install-ctf.sh
         then
             echo "[+] Install finished"
         else

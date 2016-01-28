@@ -32,10 +32,12 @@ class Shoe():
         """ 
         @note: Requires you to put a \n yourself.
         """
+        if isinstance(data, str):
+            data =  data.encode('hex')
         self._socket.send(data)
 
     def read_for(self, secs):
-        response = ""
+        response = b""
         timeout = time.time() + secs
         while True:
             is_ready = select.select([self._socket], [], [], secs)
@@ -50,7 +52,9 @@ class Shoe():
         return response
 
     def read_until(self, mystr, is_regex=False):
-        response = ""
+        response = b""
+        if isinstance(mystr, str):
+            mystr =  bytearray(mystr, 'utf-8')
         self._socket.setblocking(1)
         if is_regex:
             while not re.findall(mystr, response):
@@ -66,7 +70,7 @@ class Shoe():
         """ 
         Defaults to 1 second between characters
         """
-        response = ""
+        response = b""
         timeout = time.time() + secs
         while True:
             is_ready = select.select([self._socket], [], [], secs)
