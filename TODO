@@ -5,6 +5,7 @@
 * Make a sweet README.md
 * add installing package-name:i386
 * Test every package with manage-tools.sh
+  * Add automated testing
 * rename dirs into how the tool is usually called, e.g. "hash-identifier" to "hash_id". 
 
 ## Maybe? 

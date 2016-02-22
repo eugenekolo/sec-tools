@@ -2,4 +2,4 @@
 /bin/*
 !/bin/manage-tools.sh
 __pycache__
-
+*pyc
