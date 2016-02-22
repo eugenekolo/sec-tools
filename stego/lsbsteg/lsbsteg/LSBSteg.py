@@ -41,7 +41,7 @@ echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >>
 ```
 """
 
-import cv2.cv as cv
+import cv2 as cv
 import sys
 
 class SteganographyException(Exception):
