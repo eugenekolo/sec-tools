@@ -52,8 +52,8 @@ Installers for the following tools are included:
 To use, do:
 
 ```bash
-# set up the path
-./sec-tools setup
+# set up the path and install common libraries
+./sec-tools setup && source ~/.bashrc
 
 # list the available category/tools
 sec-tools list

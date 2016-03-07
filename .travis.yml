@@ -1,0 +1,3 @@
+dist: trusty
+install: ./sec-tools setup && source ~/.bashrc
+script: sec-tools install all
