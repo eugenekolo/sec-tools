@@ -5,49 +5,48 @@ Installers for the following tools are included:
 
 | Category | Tool | Description |
 |----------|------|-------------|
-| binary | [apktool](https://ibotpeaches.github.io/Apktool/) | Dissect, dis-assemble, and re-pack Android APKs | 
-| binary | [binwalk](https://github.com/devttys0/binwalk.git) | Firmware (and arbitrary file) analysis tool. | 
-| binary | [checksec](https://github.com/slimm609/checksec.sh) | Check binary hardening settings. | 
+| binary | [apktool](https://ibotpeaches.github.io/Apktool/) | Dissect, dis-assemble, and re-pack Android APKs |
+| binary | [binwalk](https://github.com/devttys0/binwalk.git) | Firmware (and arbitrary file) analysis tool. |
+| binary | [checksec](https://github.com/slimm609/checksec.sh) | Check binary hardening settings. |
 | binary | [hxd](https://mh-nexus.de/en/hxd/) | A simple hex editor. Ran through `wine`. |
 | binary | [jd-gui](http://jd.benow.ca/) | A graphical Java Decompiler. |
-| binary | [peda](https://github.com/longld/peda) | Enhanced environment for gdb. | 
+| binary | [peda](https://github.com/longld/peda) | Enhanced environment for gdb. |
 | binary | [preeny](https://github.com/zardus/preeny) | A collection of helpful preloads (compiled for many architectures!). |
 | binary | [qemu](http://qemu.org) | Latest version of qemu! |
-| binary | [qira](http://qira.me) | Parallel, timeless debugger. | 
-| binary | [radare2](http://www.radare.org/) | Some crazy thing crowell likes. | 
+| binary | [qira](http://qira.me) | Parallel, timeless debugger. |
+| binary | [radare2](http://www.radare.org/) | Some crazy thing crowell likes. |
 | binary | [ropgadget](https://github.com/JonathanSalwan/ROPgadget) | This tool lets you search your gadgets on your binaries to facilitate your ROP exploitation. |
 | binary | [upx](http://upx.sourceforge.net/) | A free and popular packer/unpacker. |
 | crypto | [aeskeyfind](https://citp.princeton.edu/research/memory/code/) | Find AES keys in a memory dump |
-| crypto | [cribdrag](https://github.com/SpiderLabs/cribdrag) | Interactive crib dragging tool (for crypto). | 
-| crypto | [evilize](http://www.mathstat.dal.ca/~selinger/md5collision/) | Tool to create MD5 colliding binaries | 
-| crypto | [foresight](https://github.com/ALSchwalm/foresight) | A tool for predicting the output of random number generators. To run, launch "foresee". | 
-| crypto | [hashid](https://code.google.com/p/hash-identifier/source/checkout) | Simple hash algorithm identifier. | 
+| crypto | [cribdrag](https://github.com/SpiderLabs/cribdrag) | Interactive crib dragging tool (for crypto). |
+| crypto | [evilize](http://www.mathstat.dal.ca/~selinger/md5collision/) | Tool to create MD5 colliding binaries |
+| crypto | [foresight](https://github.com/ALSchwalm/foresight) | A tool for predicting the output of random number generators. To run, launch "foresee". |
+| crypto | [hashid](https://code.google.com/p/hash-identifier/source/checkout) | Simple hash algorithm identifier. |
 | crypto | [msieve](https://sourceforge.net/projects/msieve/) | Factor primes, such as for RSA. |
 | crypto | [pkcrack](https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html) | PkZip encryption cracker. |
-| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks 
-| crypto | [python-paddingoracle](https://github.com/mwielgoszewski/python-paddingoracle) | Padding oracle attack automation. | 
-| crypto | [ssh_decoder](https://github.com/jjyg/ssh_decoder) | A tool for decoding ssh traffic. You will need `ruby1.8` from `https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng` to run this. Run with `ssh_decoder --help` for help, as running it with no arguments causes it to crash. | 
-| crypto | [xortool](https://github.com/hellman/xortool) | XOR analysis tool. | 
+| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks
+| crypto | [python-paddingoracle](https://github.com/mwielgoszewski/python-paddingoracle) | Padding oracle attack automation. |
+| crypto | [ssh_decoder](https://github.com/jjyg/ssh_decoder) | A tool for decoding ssh traffic. You will need `ruby1.8` from `https://launchpad.net/~brightbox/+archive/ubuntu/ruby-ng` to run this. Run with `ssh_decoder --help` for help, as running it with no arguments causes it to crash. |
+| crypto | [xortool](https://github.com/hellman/xortool) | XOR analysis tool. |
 | fuzzers | [afl](http://lcamtuf.coredump.cx/afl/) | State-of-the-art fuzzer. |
-| fuzzers | [taintgrind](https://github.com/wmkhoo/taintgrind) | A valgrind taint analysis tool. | 
+| fuzzers | [taintgrind](https://github.com/wmkhoo/taintgrind) | A valgrind taint analysis tool. |
 | stego | [ElectronicColoringBook](https://doegox.github.io/ElectronicColoringBook/) | Colorize data file according to repetitive chunks. |
 | stego | [lsbsteg](https://github.com/RobinDavid/LSB-Steganography) | stego files into images using the Least Significant Bit. |
 | stego | [poppler](http://poppler.freedesktop.org/) | A suite of tools to help take apart and work with PDF files |
-| stego | [steganabara](http://www.caesum.com/handbook/stego.htm) | Another image steganography solver. | 
-| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | 
-| stego | [stegsolve](http://www.caesum.com/handbook/stego.htm) | Image steganography solver. | 
+| stego | [steganabara](http://www.caesum.com/handbook/stego.htm) | Another image steganography solver. |
+| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. |
+| stego | [stegsolve](http://www.caesum.com/handbook/stego.htm) | Image steganography solver. |
 | tools | [bruteforce](http://github.com/eugenekolo/sec-tools) | A simple starter script for bruteforcing |
 | tools | [entropy](http://github.com/eugenekolo/sec-tools) | A simple tool to test entropy of a file |
 | tools | [extundelete](http://extundelete.sourceforge.net/) | Recover deleted files from an ext3 or ext4 partition. |
 | tools | [pyunpack](https://github.com/kholia/exetractor-clone) | Unpacker for packed Python executables |
 | tools | [shoe](http://github.com/eugenekolo/sec-tools) | A simple tool to assist with TCP remote communication |
-| tools | [wordlist](https://github.com/eugenekolo/win-sec-tools/releases/download/v1.0/wordlist.txt.gz) | A huge wordlist to use for cracking or 
-whatever. |
+| tools | [wordlist](https://github.com/eugenekolo/win-sec-tools/releases/download/v1.0/wordlist.txt.gz) | A huge wordlist to use for cracking or whatever. |
 | web | [burpsuite](http://portswigger.net/burp) | Web proxy to do naughty web stuff. |
-| web | [dirs3arch](https://github.com/maurosoria/dirs3arch) | Web path scanner. | 
+| web | [dirs3arch](https://github.com/maurosoria/dirs3arch) | Web path scanner. |
 | web | [mitmproxy](http://mitmproxy.org/) | A programmable and interactive HTTP proxy useful |
 | web | [net-creds](https://github.com/DanMcInerney/net-creds) | Sniffs sensitive data from interface or pcap |
-| web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. | 
+| web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. |
 
 ## Usage
 To use, do:
