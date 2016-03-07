@@ -22,7 +22,7 @@ END
 
 ACTION=$1
 TOOL=$2
-PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib wget automake autoconf python-dev git subversion python-pip wine"
+PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g wget automake autoconf python-dev git subversion python-pip wine"
 
 if [ "$TOOL" == "all" ]
 then
@@ -36,16 +36,18 @@ then
     exit
 fi
 
-cd $(dirname "${BASH_SOURCE[0]}")/..
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR/..
 
 case $ACTION in
     setup)
         sudo apt-get install $PACKAGE_REQS
-        echo "export CTF_ROOT=\"$PWD\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
-	source ~/.bashrc
+        echo "export CTF_ROOT=\"$DIR\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
+        CTF_ROOT=$DIR
         echo "export PATH=\"$CTF_ROOT/bin:\$PATH\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
-        source ~/.bashrc
-	ln -s $0 $CTF_ROOT/bin/sec-tools
+        mkdir $CTF_ROOT/bin
+        ln -s $CTF_ROOT/sec-tools $CTF_ROOT/bin/sec-tools
+        echo "[*] Set up done. Now run \`source ~/.bashrc\` to set the paths!"
         ;;
     list)
         for t in ./*/*

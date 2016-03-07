@@ -1,2 +1,3 @@
-sudo apt-get install python-poppler poppler-utils
+#BROKEN ATM
+#sudo apt-get install python-poppler poppler-utils
 
