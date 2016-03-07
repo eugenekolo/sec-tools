@@ -1,11 +1,5 @@
 #!/bin/bash -e
 
-# Set up configures your $CTF_ROOT and adds it to $PATH. Also apt-get install's important packages required for tools.
-# list      - recursively looks for install-ctf.sh scripts and the directory they are in. The tool name is the directory.
-#             Note that this assumes the structure of tools is $CTF_ROOT/<category_dir>/<tool_name_dir>/install-ctf.sh
-# Install   - runs the install-ctf.sh if it exists in the tool directory.
-# Uninstall - tries to run an uninstall-ctf.sh if it exists in the tool directory.
-
 function usage()
 {
     cat <<END
