@@ -9,9 +9,9 @@ Installers for the following tools are included:
 | binary | [apktool](https://ibotpeaches.github.io/Apktool/) | Dissect, dis-assemble, and re-pack Android APKs | <!--test-->
 | binary | [binwalk](https://github.com/devttys0/binwalk.git) | Firmware (and arbitrary file) analysis tool. | <!--test-->
 | binary | [checksec](https://github.com/slimm609/checksec.sh) | Check binary hardening settings. | <!--test-->
-| binary | [hxd](https://mh-nexus.de/en/hxd/) | A simple hex editor. Ran through `wine`. | <!--uses-wine-->
-| binary | [idafree](https://www.hex-rays.com/products/ida/support/download_freeware.shtml) | The most popular interactive disassembler, free edition | <!--uses-wine-->
-| binary | [jdgui](http://jd.benow.ca/) | A graphical Java Decompiler. | <!--uses-wine-->
+| binary | [hxd](https://mh-nexus.de/en/hxd/) | A simple hex editor. Ran through `wine`. Uses wine. | <!--uses-wine-->
+| binary | [idafree](https://www.hex-rays.com/products/ida/support/download_freeware.shtml) | The most popular interactive disassembler, free edition. Uses wine. | <!--uses-wine-->
+| binary | [jdgui](http://jd.benow.ca/) | A graphical Java Decompiler. Uses wine. | <!--uses-wine-->
 | binary | [peda](https://github.com/longld/peda) | Enhanced environment for gdb. | <!--test-->
 | binary | [preeny](https://github.com/zardus/preeny) | A collection of helpful preloads (compiled for many architectures!). | <!--test-->
 | binary | [qemu](http://qemu.org) | Latest version of qemu! | <!--test-->
