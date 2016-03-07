@@ -22,7 +22,7 @@ END
 
 ACTION=$1
 TOOL=$2
-PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g wget automake autoconf python-dev git subversion python-pip wine1.7"
+PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g wget automake autoconf python-dev git subversion python-pip"
 
 if [ "$TOOL" == "all" ]
 then
@@ -37,21 +37,19 @@ then
 fi
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR/..
+cd $DIR
 
 case $ACTION in
     setup)
-        sudo add-apt-repository ppa:ubuntu-wine/ppa -y && sudo apt-get update # Wine's a pain
         sudo apt-get install $PACKAGE_REQS
         echo "export CTF_ROOT=\"$DIR\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
         CTF_ROOT=$DIR
-        echo "export PATH=\"$CTF_ROOT/bin:\$PATH\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
+        echo "export PATH=\"$CTF_ROOT/bin:$CTF_ROOT:\$PATH\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
         mkdir $CTF_ROOT/bin
-        ln -s $CTF_ROOT/sec-tools $CTF_ROOT/bin/sec-tools
         echo "[*] Set up done. Now run \`source ~/.bashrc\` to set the paths!"
         ;;
     list)
-        for t in ./*/*
+        for t in */*
         do
             [ ! -e "$t/install-ctf.sh" ] && continue
             echo $t
@@ -74,5 +72,15 @@ case $ACTION in
         cd $TOOL
         [ -x ./uninstall.sh ] && ./uninstall.sh
         cd ..
+        ;;
+    test)
+        toolname=$(expr match "$TOOL" '.*/\(.*\)')
+        echo $toolname
+        if ! cat README.md | grep '!--test--' | grep -q '\[$toolname\]'
+        then
+            $0 install $TOOL
+        else
+            echo "Tests disabled."
+        fi
         ;;
 esac
