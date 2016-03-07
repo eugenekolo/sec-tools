@@ -1,4 +1,5 @@
-sudo apt-get install python-pip python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg8-dev zlib1g-dev
+sudo apt-get install -y python-pip python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg8-dev 
+zlib1g-dev
 # Might need `pip` instead. But it only works with Python2
 sudo pip2 install mitmproxy
 ln -s /usr/local/bin/mitmdump $CTF_ROOT/bin/mitmdump

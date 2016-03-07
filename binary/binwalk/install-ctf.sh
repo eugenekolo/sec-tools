@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sudo apt-get install python-lzma
+sudo apt-get install -y python-lzma
 git clone --depth 1 https://github.com/devttys0/binwalk.git
 sudo pip install -e binwalk
 

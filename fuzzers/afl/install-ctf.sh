@@ -8,7 +8,7 @@
 #make
 
 #cd qemu_mode
-#sudo apt-get install bison libglib2.0-dev
+#sudo apt-get install -y bison libglib2.0-dev
 #./build_qemu_support.sh
 #cd ../..
 
