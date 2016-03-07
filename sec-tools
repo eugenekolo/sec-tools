@@ -22,7 +22,7 @@ END
 
 ACTION=$1
 TOOL=$2
-PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g wget automake autoconf python-dev git subversion python-pip"
+PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g wget automake autoconf python-dev git subversion python-pip wine1.7"
 
 if [ "$TOOL" == "all" ]
 then
@@ -41,7 +41,7 @@ cd $DIR/..
 
 case $ACTION in
     setup)
-        sudo add-apt-repository ppa:ubuntu-wine/ppa -y && sudo apt-get update && sudo apt-get install wine # Wine's a pain
+        sudo add-apt-repository ppa:ubuntu-wine/ppa -y && sudo apt-get update # Wine's a pain
         sudo apt-get install $PACKAGE_REQS
         echo "export CTF_ROOT=\"$DIR\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
         CTF_ROOT=$DIR
