@@ -53,14 +53,13 @@ To use, do:
 
 ```bash
 # set up the path
-/path/to/sec-tools/bin/manage-tools.sh setup
-source ~/.bashrc
+./sec-tools setup
 
 # list the available category/tools
-manage-tools.sh list
+sec-tools list
 
 # install whatever <category/tool-name>
-manage-tools.sh install binary/radare2
+sec-tools install binary/radare2
 
 # use the tool - your path is automatically configured
 rabin2 -e /bin/ls
