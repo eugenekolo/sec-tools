@@ -3,17 +3,15 @@
 function usage()
 {
     cat <<END
-Usage: $(basename $0) [-s] (list|setup|install|uninstall) tool
+Usage: $(basename $0) (list|setup|install|uninstall) tool
 
 Where:
-    tool        the name of the tool. if "all", does the action on all
-            tools
+    tool        the name of the tool. if "all", does the action on all tools
 
 Actions:
-    setup       set up the environment (adds ctf-tools/bin to your
-            \$PATH in .bashrc)
-    list        list all tools (-i: only installed, -u: only
-            uninstalled)
+    setup       set up the environment (adds sec-tools/bin to your
+                \$PATH in .bashrc)
+    list        list all tools
     install     installs a tool
     uninstall   uninstalls a tool
 
@@ -78,9 +76,12 @@ case $ACTION in
         echo $toolname
         if ! cat README.md | grep '!--test--' | grep -q '\[$toolname\]'
         then
-            $0 install $TOOL
+            $0 install $TOOL 2>/dev/null
+            echo "[+] Test install finished."
         else
-            echo "Tests disabled."
+            echo "[-] Tests disabled."
         fi
+        ;;
+       *)
         ;;
 esac
