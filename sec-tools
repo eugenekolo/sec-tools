@@ -56,7 +56,7 @@ case $ACTION in
     install)
         cd $TOOL
 
-        echo "Installing $TOOL"
+        echo "[+] Installing $TOOL"
         if ./install-ctf.sh
         then
             echo "[+] Install finished"
@@ -76,12 +76,12 @@ case $ACTION in
         echo $toolname
         if ! cat README.md | grep '!--test--' | grep -q '\[$toolname\]'
         then
-            $0 install $TOOL 2>/dev/null
+            $0 install $TOOL 1>/dev/null
             echo "[+] Test install finished."
         else
             echo "[-] Tests disabled."
         fi
         ;;
-       *)
+    *)
         ;;
 esac
