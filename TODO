@@ -1,7 +1,7 @@
 # TODO
 
 ## High level
-* Test every install
+* Only testing installs ATM. Not running them.
 
 ## More than maybe
 * add HashPump
@@ -11,9 +11,6 @@
 ## Maybe? 
 * Go through hacked team
 * add virtualenv set up to the manage-tools setup
-* maybe link popper util bins to /bin
 
 ## Things that are failing/broken
-* qemu install fails
-* PadBuster is broken
 * add pathgrind to /bin
