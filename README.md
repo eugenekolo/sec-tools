@@ -55,7 +55,7 @@ To use, do:
 
 ```bash
 # set up the path
-./sec-tools setup
+./sec-tools setup && source ~/.bashrc
 
 # list the available category/tools
 sec-tools list
