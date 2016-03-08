@@ -56,7 +56,7 @@ case $ACTION in
     install)
         cd $TOOL
 
-        echo "[+] Installing $TOOL"
+        echo "[+] [$TOOL] Installing."
         if ./install-ctf.sh
         then
             echo "[+] Install finished"
