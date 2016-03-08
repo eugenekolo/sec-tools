@@ -1,6 +1,6 @@
-#BROKEN ATM
-#git clone https://github.com/abeluck/stegdetect
-#cd stegdetect
-#linux32 ./configure
-#linux32 make
+git clone https://github.com/abeluck/stegdetect
+cd stegdetect
+wget -O file/Magdir/varied.out https://raw.githubusercontent.com/file/file/master/magic/Magdir/varied.out
+linux32 ./configure
+linux32 make
 

@@ -62,7 +62,6 @@ case $ACTION in
             echo "[+] Install finished"
         else
             echo "[-] Install FAILED"
-            cat install-ctf.log >&2
             exit 1
         fi
         ;;
