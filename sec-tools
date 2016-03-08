@@ -20,7 +20,7 @@ END
 
 ACTION=$1
 TOOL=$2
-PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g wget automake autoconf python-dev git subversion python-pip"
+PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g wget automake autoconf python-dev git subversion python-pip ruby rubygems"
 
 if [ "$TOOL" == "all" ]
 then

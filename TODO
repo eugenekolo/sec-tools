@@ -1,15 +1,12 @@
 # TODO
 
 ## High level
-* Add automated testing
 * Test every install
 
 ## More than maybe
 * add HashPump
 * add Python_Pin
 * add taintgrind
-* add IDA free
-* put r2 bins into /bin
 
 ## Maybe? 
 * Go through hacked team
@@ -20,6 +17,3 @@
 * qemu install fails
 * PadBuster is broken
 * add pathgrind to /bin
-* stegdetect install fails
-
-
