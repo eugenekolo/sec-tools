@@ -26,7 +26,6 @@ if [ "$TOOL" == "all" ]
 then
     for t in $($0 list)
     do
-        echo $t
         $0 $ACTION $t
     done
 elif [ -z "$TOOL" -a "$ACTION" != "list" -a "$ACTION" != "setup" ]
@@ -73,16 +72,17 @@ case $ACTION in
         cd ..
         ;;
     test)
-        echo 'hi'
-        echo $TOOL
-        toolname=$(expr match "$TOOL" '.*/\(.*\)')
-        echo $toolname
-        if ! cat README.md | grep '!--test--' | grep -q -- '\[$toolname\]'
+        if toolname=$(expr match "$TOOL" '.*/\(.*\)')
         then
-            $0 install $TOOL &>/dev/null
-            echo "[+] Test install finished."
+            if ! cat README.md | grep '!--test--' | grep -q -- '\[$toolname\]'
+            then
+                $0 install $TOOL &>/dev/null
+                echo "[+] Test install finished."
+            else
+                echo "[-] Test disabled."
+            fi
         else
-            echo "[-] Tests disabled."
+            echo "[-] Tool not found."
         fi
         ;;
     *)
