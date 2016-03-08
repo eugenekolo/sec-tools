@@ -77,12 +77,12 @@ case $ACTION in
             if ! cat README.md | grep '!--test--' | grep -q -- '\[$toolname\]'
             then
                 $0 install $TOOL &>/dev/null
-                echo "[+] Test install finished."
+                echo "[+] [$TOOL] Test install finished."
             else
-                echo "[-] Test disabled."
+                echo "[-] [$TOOL] Test disabled."
             fi
         else
-            echo "[-] Tool not found."
+            echo "[-] [$TOOL] Tool not found."
         fi
         ;;
     *)
