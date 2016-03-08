@@ -26,6 +26,7 @@ if [ "$TOOL" == "all" ]
 then
     for t in $($0 list)
     do
+        echo $t
         $0 $ACTION $t
     done
 elif [ -z "$TOOL" -a "$ACTION" != "list" -a "$ACTION" != "setup" ]
@@ -73,6 +74,7 @@ case $ACTION in
         ;;
     test)
         echo 'hi'
+        echo $TOOL
         toolname=$(expr match "$TOOL" '.*/\(.*\)')
         echo $toolname
         if ! cat README.md | grep '!--test--' | grep -q -- '\[$toolname\]'
