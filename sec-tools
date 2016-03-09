@@ -58,7 +58,7 @@ case $ACTION in
         for t in */*
         do
             [ ! -e "$t/install-ctf.sh" ] && continue
-            log $t
+            echo $t
         done
         ;;
     install)
@@ -83,7 +83,7 @@ case $ACTION in
         then
             if ! cat README.md | grep -q -- '\[$toolname\]' | grep -q -- '!--test--' 
             then
-                $0 install $TOOL &>/dev/null
+                $0 install $TOOL
                 log "[+] [$TOOL] Test install finished."
             else
                 log "[-] [$TOOL] Test disabled."
