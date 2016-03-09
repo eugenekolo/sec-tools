@@ -6,38 +6,40 @@ Installers for the following tools are included:
 
 | Category | Tool | Description |
 |----------|------|-------------|
-| binary | [apktool](https://ibotpeaches.github.io/Apktool/) | Dissect, dis-assemble, and re-pack Android APKs | <!--test-->
+| binary | [apktool](https://ibotpeaches.github.io/Apktool/) | Disassemble, examine, and re-pack Android APKs | <!--test-->
 | binary | [binwalk](https://github.com/devttys0/binwalk.git) | Firmware (and arbitrary file) analysis tool. | <!--test-->
 | binary | [checksec](https://github.com/slimm609/checksec.sh) | Check binary hardening settings. | <!--test-->
-| binary | [hxd](https://mh-nexus.de/en/hxd/) | A simple hex editor. Ran through `wine`. Uses wine. | <!--uses-wine-->
-| binary | [idafree](https://www.hex-rays.com/products/ida/support/download_freeware.shtml) | The most popular interactive disassembler, free edition. Uses wine. | <!--uses-wine-->
-| binary | [jdgui](http://jd.benow.ca/) | A graphical Java Decompiler. Uses wine. | <!--uses-wine-->
+| binary | [hxd](https://mh-nexus.de/en/hxd/) | A simple hex editor. Ran through `wine`. (Uses wine.) | <!--uses-wine-->
+| binary | [idafree](https://www.hex-rays.com/products/ida/support/download_freeware.shtml) | The most popular interactive disassembler, free edition. (Uses wine.) | <!--uses-wine-->
+| binary | [jdgui](http://jd.benow.ca/) | A graphical Java Decompiler. (Uses wine.) | <!--uses-wine-->
 | binary | [peda](https://github.com/longld/peda) | Enhanced environment for gdb. | <!--test-->
 | binary | [preeny](https://github.com/zardus/preeny) | A collection of helpful preloads (compiled for many architectures!). | <!--test-->
-| binary | [qemu](http://qemu.org) | Latest version of qemu! | <!--test-->
-| binary | [qira](http://qira.me) | Parallel, timeless debugger. | <!--test-->
+| binary | [qemu](http://qemu.org) | Latest version of qemu! | <!--takes-too-long-->
+| binary | [qira](http://qira.me) | Parallel, timeless debugger. Go back and forth in time. | <!--test-->
 | binary | [radare2](http://www.radare.org/) | Some crazy thing crowell likes. | <!--test-->
-| binary | [ropgadget](https://github.com/JonathanSalwan/ROPgadget) | This tool lets you search your gadgets on your binaries to facilitate your ROP exploitation. | <!--test-->
+| binary | [ropgadget](https://github.com/JonathanSalwan/ROPgadget) | Search ROP gadgets, autocreate a ropchain, and fetch gadgets from a bin. | <!--test-->
 | binary | [upx](http://upx.sourceforge.net/) | A free and popular packer/unpacker. | <!--test-->
-| crypto | [aeskeyfind](https://citp.princeton.edu/research/memory/code/) | Find AES keys in a memory dump | <!--test-->
+| crypto | [aeskeyfind](https://citp.princeton.edu/research/memory/code/) | Find AES keys in a memory dump. | <!--test-->
 | crypto | [cribdrag](https://github.com/SpiderLabs/cribdrag) | Interactive crib dragging tool (for crypto). | <!--test-->
 | crypto | [evilize](http://www.mathstat.dal.ca/~selinger/md5collision/) | Tool to create MD5 colliding binaries | <!--test-->
 | crypto | [foresight](https://github.com/ALSchwalm/foresight) | A tool for predicting the output of random number generators. To run, launch "foresee". | <!--test-->
 | crypto | [hashid](https://code.google.com/p/hash-identifier/source/checkout) | Simple hash algorithm identifier. | <!--test-->
 | crypto | [msieve](https://sourceforge.net/projects/msieve/) | Factor primes, such as for RSA. | <!--test-->
+| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks | <!--hangs-->
 | crypto | [pkcrack](https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html) | PkZip encryption cracker. | <!--test-->
-| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks | <!--test-->
 | crypto | [python-paddingoracle](https://github.com/mwielgoszewski/python-paddingoracle) | Padding oracle attack automation. | <!--test-->
 | crypto | [ssh_decoder](https://github.com/jjyg/ssh_decoder) | A tool for decoding ssh traffic. | <!--test-->
 | crypto | [xortool](https://github.com/hellman/xortool) | XOR analysis tool. | <!--test-->
 | fuzzers | [afl](http://lcamtuf.coredump.cx/afl/) | State-of-the-art fuzzer. | <!--test-->
-| fuzzers | [taintgrind](https://github.com/wmkhoo/taintgrind) | A valgrind taint analysis tool. | <!--test-->
+| fuzzers | [pathgrind](https://github.com/codelion/pathgrind) | Path based fuzzer. | <!--test-->
+| fuzzers | [taintgrind](https://github.com/wmkhoo/taintgrind) | A valgrind taint analysis tool. | <!--TODO-->
 | stego | [ElectronicColoringBook](https://doegox.github.io/ElectronicColoringBook/) | Colorize data file according to repetitive chunks. | <!--test-->
 | stego | [lsbsteg](https://github.com/RobinDavid/LSB-Steganography) | stego files into images using the Least Significant Bit. | <!--test-->
 | stego | [poppler](http://poppler.freedesktop.org/) | A suite of tools to help take apart and work with PDF files | <!--test-->
 | stego | [steganabara](http://www.caesum.com/handbook/stego.htm) | Another image steganography solver. | <!--test-->
-| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | <!--test-->
+| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | <!--random-->
 | stego | [stegsolve](http://www.caesum.com/handbook/stego.htm) | Image steganography solver. | <!--test-->
+| tools | [brakeman](http://brakemanscanner.org/) | Ruby-on-rails static-analysis security scanner. | <!--test-->
 | tools | [bruteforce](http://github.com/eugenekolo/sec-tools) | A simple starter script for bruteforcing | <!--test-->
 | tools | [entropy](http://github.com/eugenekolo/sec-tools) | A simple tool to test entropy of a file | <!--test-->
 | tools | [extundelete](http://extundelete.sourceforge.net/) | Recover deleted files from an ext3 or ext4 partition. | <!--test-->
@@ -75,15 +77,7 @@ To add a tool (say, named *toolname*), do the following:
 
 1. Decide what category it falls under. You probably shouldn't create a new one.
 2. Create a `category\toolname` directory.
-3. Create an `install-ctf.sh` script.
-
-### Install Scripts
-The install script will be run with `$PWD` being `toolname`. It should install the tool into this directory, in as contained a manner as possible.
-Ideally, full uninstallation should be possible with a `git clean`.
-
-The install script should create a `bin` directory and put its executables there.
-These executables will be automatically linked into the main `bin` directory for the repo.
-They could be launched from any directory, so don't make assumptions about the location of `$0`!
+3. Create an `install-ctf.sh` script. It's a simple bash script, look at already made ones for example.
 
 ## License
 The individual tools are all licensed under their own licenses.

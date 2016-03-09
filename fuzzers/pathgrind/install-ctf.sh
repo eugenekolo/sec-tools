@@ -1,6 +1,8 @@
-#BROKEN ATM
-#sudo apt-get -y install libc6-dev-i386 libc6-dev
-#git clone  https://github.com/codelion/pathgrind.git
-#cd pathgrind
-#./install.sh
+git clone https://github.com/codelion/pathgrind.git
+cd pathgrind
+git apply ../pathgrind.patch
+./install.sh
 
+ln -s $PWD/fuzz/fuzz.py $CTF_ROOT/bin/pathgrind-fuzz
+ln -s $PWD/fuzz/gui.py $CTF_ROOT/bin/pathgrind-gui
+ln -s $PWD/fuzz/plotfuzz.py $CTF_ROOT/bin/pathgrind-plot
