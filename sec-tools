@@ -81,7 +81,7 @@ case $ACTION in
     test)
         if toolname=$(expr match "$TOOL" '.*/\(.*\)')
         then
-            if ! cat README.md | grep -q -- '\[$toolname\]' | grep -q -- '!--test--' 
+            if ! cat README.md | grep -- '\[$toolname\]' | grep -q -- '!--test--' 
             then
                 $0 install $TOOL
                 log "[+] [$TOOL] Test install finished."
