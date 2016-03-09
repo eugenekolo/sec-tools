@@ -37,7 +37,7 @@ Installers for the following tools are included:
 | stego | [lsbsteg](https://github.com/RobinDavid/LSB-Steganography) | stego files into images using the Least Significant Bit. | <!--test-->
 | stego | [poppler](http://poppler.freedesktop.org/) | A suite of tools to help take apart and work with PDF files | <!--test-->
 | stego | [steganabara](http://www.caesum.com/handbook/stego.htm) | Another image steganography solver. | <!--test-->
-| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | <!--test-->
+| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | <!--random-->
 | stego | [stegsolve](http://www.caesum.com/handbook/stego.htm) | Image steganography solver. | <!--test-->
 | tools | [brakeman](http://brakemanscanner.org/) | Ruby-on-rails static-analysis security scanner. | <!--test-->
 | tools | [bruteforce](http://github.com/eugenekolo/sec-tools) | A simple starter script for bruteforcing | <!--test-->
