@@ -20,7 +20,7 @@ END
 
 function log()
 {
-	echo -e "${PURPLE}${BOLD}$@${RESET}"
+    echo -e "${PURPLE}${BOLD}$@${RESET}"
 }
 
 PURPLE='\033[0;35m'
@@ -79,10 +79,13 @@ case $ACTION in
         cd ..
         ;;
     test)
+    cat README.md
         if toolname=$(expr match "$TOOL" '.*/\(.*\)')
         then
-            if ! cat README.md | grep -- '\[$toolname\]' | grep -q -- '!--test--' 
+            echo $toolname
+            if ! cat README.md | grep '\[$toolname\]' | grep -q -- '!--test--'
             then
+                echo wtf
                 $0 install $TOOL
                 log "[+] [$TOOL] Test install finished."
             else
