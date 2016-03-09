@@ -63,7 +63,6 @@ case $ACTION in
         ;;
     install)
         cd $TOOL
-
         log "[+] [$TOOL] Installing."
         if ./install-ctf.sh
         then
@@ -81,12 +80,12 @@ case $ACTION in
     test)
         if toolname=$(expr match "$TOOL" '.*/\(.*\)')
         then
-            if [ TESTING=$(cat README.md | grep '!--test--' | grep -- "\[$toolname\]") ];
+            if TESTING=$(cat README.md | grep '!--test--' | grep -q -- "\[$toolname\]")
             then
-                log "[-] [$TOOL] Test disabled."
-            else
-                $0 install $TOOL
+                $0 install $TOOL &>/dev/null
                 log "[+] [$TOOL] Test install finished."
+            else
+                log "[-] [$TOOL] Test disabled."
             fi
         else
             log "[-] [$TOOL] Tool not found."

@@ -25,7 +25,7 @@ Installers for the following tools are included:
 | crypto | [foresight](https://github.com/ALSchwalm/foresight) | A tool for predicting the output of random number generators. To run, launch "foresee". | <!--test-->
 | crypto | [hashid](https://code.google.com/p/hash-identifier/source/checkout) | Simple hash algorithm identifier. | <!--test-->
 | crypto | [msieve](https://sourceforge.net/projects/msieve/) | Factor primes, such as for RSA. | <!--test-->
-| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks | <!--test-->
+| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks | <!--hangs-->
 | crypto | [pkcrack](https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html) | PkZip encryption cracker. | <!--test-->
 | crypto | [python-paddingoracle](https://github.com/mwielgoszewski/python-paddingoracle) | Padding oracle attack automation. | <!--test-->
 | crypto | [ssh_decoder](https://github.com/jjyg/ssh_decoder) | A tool for decoding ssh traffic. | <!--test-->
