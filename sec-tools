@@ -18,6 +18,14 @@ Actions:
 END
 }
 
+function log()
+{
+	echo -e "${PURPLE}${BOLD}$@${RESET}"
+}
+
+PURPLE='\033[0;35m'
+RESET='\033[0m'
+BOLD="\033[1m"
 ACTION=$1
 TOOL=$2
 PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g zlib1g-dev wget automake autoconf python-dev git subversion python-pip ruby"
@@ -44,24 +52,24 @@ case $ACTION in
         CTF_ROOT=$DIR
         echo "export PATH=\"$CTF_ROOT/bin:$CTF_ROOT:\$PATH\" # DO NOT EDIT This is added by sec-tools" >> ~/.bashrc
         mkdir $CTF_ROOT/bin
-        echo "[*] Set up done. Now run \`source ~/.bashrc\` to set the paths!"
+        log "[*] Set up done. Now run \`source ~/.bashrc\` to set the paths!"
         ;;
     list)
         for t in */*
         do
             [ ! -e "$t/install-ctf.sh" ] && continue
-            echo $t
+            log $t
         done
         ;;
     install)
         cd $TOOL
 
-        echo "[+] [$TOOL] Installing."
+        log "[+] [$TOOL] Installing."
         if ./install-ctf.sh
         then
-            echo "[+] Install finished"
+            log "[+] Install finished"
         else
-            echo "[-] Install FAILED"
+            log "[-] Install FAILED"
             exit 1
         fi
         ;;
@@ -73,15 +81,15 @@ case $ACTION in
     test)
         if toolname=$(expr match "$TOOL" '.*/\(.*\)')
         then
-            if ! cat README.md | grep '!--test--' | grep -q -- '\[$toolname\]'
+            if ! cat README.md | grep -q -- '\[$toolname\]' | grep -q -- '!--test--' 
             then
                 $0 install $TOOL &>/dev/null
-                echo "[+] [$TOOL] Test install finished."
+                log "[+] [$TOOL] Test install finished."
             else
-                echo "[-] [$TOOL] Test disabled."
+                log "[-] [$TOOL] Test disabled."
             fi
         else
-            echo "[-] [$TOOL] Tool not found."
+            log "[-] [$TOOL] Tool not found."
         fi
         ;;
     *)
