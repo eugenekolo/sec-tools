@@ -79,17 +79,14 @@ case $ACTION in
         cd ..
         ;;
     test)
-    cat README.md
         if toolname=$(expr match "$TOOL" '.*/\(.*\)')
         then
-            echo $toolname
-            if ! cat README.md | grep '\[$toolname\]' | grep -q -- '!--test--'
+            if [ TESTING=$(cat README.md | grep '!--test--' | grep -- "\[$toolname\]") ];
             then
-                echo wtf
+                log "[-] [$TOOL] Test disabled."
+            else
                 $0 install $TOOL
                 log "[+] [$TOOL] Test install finished."
-            else
-                log "[-] [$TOOL] Test disabled."
             fi
         else
             log "[-] [$TOOL] Tool not found."

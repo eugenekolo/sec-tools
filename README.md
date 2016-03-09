@@ -77,15 +77,7 @@ To add a tool (say, named *toolname*), do the following:
 
 1. Decide what category it falls under. You probably shouldn't create a new one.
 2. Create a `category\toolname` directory.
-3. Create an `install-ctf.sh` script.
-
-### Install Scripts
-The install script will be run with `$PWD` being `toolname`. It should install the tool into this directory, in as contained a manner as possible.
-Ideally, full uninstallation should be possible with a `git clean`.
-
-The install script should create a `bin` directory and put its executables there.
-These executables will be automatically linked into the main `bin` directory for the repo.
-They could be launched from any directory, so don't make assumptions about the location of `$0`!
+3. Create an `install-ctf.sh` script. It's a simple bash script, look at already made ones for example.
 
 ## License
 The individual tools are all licensed under their own licenses.
