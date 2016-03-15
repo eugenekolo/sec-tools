@@ -9,6 +9,7 @@ Installers for the following tools are included:
 | binary | [apktool](https://ibotpeaches.github.io/Apktool/) | Disassemble, examine, and re-pack Android APKs | <!--test-->
 | binary | [binwalk](https://github.com/devttys0/binwalk.git) | Firmware (and arbitrary file) analysis tool. | <!--test-->
 | binary | [checksec](https://github.com/slimm609/checksec.sh) | Check binary hardening settings. | <!--test-->
+| binary | [dex2jar](https://github.com/pxb1988/dex2jar) | Tools to work with android .dex files | <!--test-->
 | binary | [hxd](https://mh-nexus.de/en/hxd/) | A simple hex editor. Ran through `wine`. (Uses wine.) | <!--uses-wine-->
 | binary | [idafree](https://www.hex-rays.com/products/ida/support/download_freeware.shtml) | The most popular interactive disassembler, free edition. (Uses wine.) | <!--uses-wine-->
 | binary | [jdgui](http://jd.benow.ca/) | A graphical Java Decompiler. (Uses wine.) | <!--uses-wine-->

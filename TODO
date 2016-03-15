@@ -3,6 +3,7 @@
 ## High level
 * Add vagrant + docker
 * Only testing installs ATM. Not running them.
+* Add uninstall + warning if already installed
 
 ## More than maybe
 * add HashPump
@@ -10,7 +11,7 @@
 * add taintgrind
 
 ## Maybe? 
-* Go through hacked team
+* Go through hackedteam
 * add virtualenv set up to the manage-tools setup
 
 ## Things that are failing/broken
