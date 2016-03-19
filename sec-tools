@@ -28,7 +28,7 @@ RESET='\033[0m'
 BOLD="\033[1m"
 ACTION=$1
 TOOL=$2
-PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g zlib1g-dev wget automake autoconf python-dev git subversion python-pip ruby"
+PACKAGE_REQS="build-essential libtool g++ gcc texinfo curl zlib1g zlib1g-dev wget automake autoconf python-dev git subversion python-pip ruby libglib2.0-dev pkg-config"
 
 if [ "$TOOL" == "all" ]
 then
@@ -94,3 +94,4 @@ case $ACTION in
     *)
         ;;
 esac
+

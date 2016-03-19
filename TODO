@@ -6,13 +6,14 @@
 * Add uninstall + warning if already installed
 
 ## More than maybe
-* add HashPump
-* add Python_Pin
-* add taintgrind
+* add check into sec-tools to not multiple add CTF_ROOT and PATH 
+* add HashPump, angr, Python_Pin, taingrid
+* add villoc, valgrind, volatility, yafu 
+* add wireshark, sublime text, pwntools, sonicvisualizer 
+* add pngtools, exiftool, fsck
 
-## Maybe? 
-* Go through hackedteam
-* add virtualenv set up to the manage-tools setup
+## Maybe?
+* add virtualenv + rbenv for things
 
 ## Things that are failing/broken
 * add pathgrind to /bin

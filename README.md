@@ -70,9 +70,6 @@ sec-tools install binary/radare2
 rabin2 -e /bin/ls
 ```
 
-The tools attempt to download and install themselves in their desiginated self-contained directory.
-The binaries of each tool are soft linked into /path/to/sec-tools/bin which is added to your path when you run `manage-tools setup`
-
 ## Adding Tools
 To add a tool (say, named *toolname*), do the following:
 
