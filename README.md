@@ -72,14 +72,18 @@ apktool --version
 
 ## Containers for quick play
 ### Docker
+```
 git clone https://github.com/eugenekolo/sec-tools.git
 docker build -t sec-tools .
 docker run -it sec-tools
+```
 
 ### Vagrant
+```
 wget https://raw.githubusercontent.com/eugenekolo/sec-tools/master/Vagrantfile
 vagrant up
 vagrant ssh
+```
 
 ## Adding Tools
 To add a tool (say, named *toolname*), do the following:
