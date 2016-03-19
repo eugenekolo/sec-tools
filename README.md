@@ -33,12 +33,11 @@ Installers for the following tools are included:
 | crypto | [xortool](https://github.com/hellman/xortool) | XOR analysis tool. | <!--test-->
 | fuzzers | [afl](http://lcamtuf.coredump.cx/afl/) | State-of-the-art fuzzer. | <!--test-->
 | fuzzers | [pathgrind](https://github.com/codelion/pathgrind) | Path based fuzzer. | <!--test-->
-| fuzzers | [taintgrind](https://github.com/wmkhoo/taintgrind) | A valgrind taint analysis tool. | <!--TODO-->
 | stego | [ElectronicColoringBook](https://doegox.github.io/ElectronicColoringBook/) | Colorize data file according to repetitive chunks. | <!--test-->
 | stego | [lsbsteg](https://github.com/RobinDavid/LSB-Steganography) | stego files into images using the Least Significant Bit. | <!--test-->
 | stego | [poppler](http://poppler.freedesktop.org/) | A suite of tools to help take apart and work with PDF files | <!--test-->
 | stego | [steganabara](http://www.caesum.com/handbook/stego.htm) | Another image steganography solver. | <!--test-->
-| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | <!--random-->
+| stego | [stegdetect](http://www.outguess.org/) | Steganography detection/breaking tool. | <!--broken-->
 | stego | [stegsolve](http://www.caesum.com/handbook/stego.htm) | Image steganography solver. | <!--test-->
 | tools | [brakeman](http://brakemanscanner.org/) | Ruby-on-rails static-analysis security scanner. | <!--test-->
 | tools | [bruteforce](http://github.com/eugenekolo/sec-tools) | A simple starter script for bruteforcing | <!--test-->
@@ -57,7 +56,8 @@ Installers for the following tools are included:
 To use, do:
 
 ```bash
-# set up the path
+# download and set up
+git clone https://github.com/eugenekolo/sec-tools.git
 ./sec-tools setup && source ~/.bashrc
 
 # list the available category/tools
@@ -69,6 +69,17 @@ sec-tools install binary/apktool
 # use the tool - your path is automatically configured
 apktool --version
 ```
+
+## Containers for quick play
+### Docker
+git clone https://github.com/eugenekolo/sec-tools.git
+docker build -t sec-tools .
+docker run -it sec-tools
+
+### Vagrant
+wget https://raw.githubusercontent.com/eugenekolo/sec-tools/master/Vagrantfile
+vagrant up
+vagrant ssh
 
 ## Adding Tools
 To add a tool (say, named *toolname*), do the following:

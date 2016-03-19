@@ -12,6 +12,7 @@
 * add villoc, valgrind, volatility, yafu 
 * add wireshark, sublime text, pwntools, sonicvisualizer 
 * add pngtools, exiftool, fsck
+* add virtualbox, cuckoo, quassel
 
 ## Maybe?
 * add virtualenv + rbenv for things

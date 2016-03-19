@@ -11,5 +11,8 @@ SCRIPT
 Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.hostname = "sec-tools"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+  end
   config.vm.provision "shell", privileged: false, inline: $bootstrap
 end
