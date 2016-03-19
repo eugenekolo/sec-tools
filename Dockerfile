@@ -13,10 +13,12 @@ USER grill
 
 WORKDIR /home/grill/sec-tools
 RUN git checkout .
-RUN ./sec-tools -s setup
+RUN ./sec-tools setup
+RUN bash -c "source /home/grill/.bashrc"
 
 WORKDIR /home/grill/
 RUN bash -c "source /etc/bash_completion.d/virtualenvwrapper && mkvirtualenv grill"
 RUN echo "workon grill" >> /home/grill/.bashrc
+RUN sec-tools install all
 
 ENTRYPOINT bash -i

@@ -1,4 +1,4 @@
-# sec-tools [![Build Status](https://travis-ci.org/eugenekolo/sec-tools.svg?branch=master)](https://travis-ci.org/eugenekolo/sec-tools)
+# sec-tools [![Build Status](https://travis-ci.org/eugenekolo/sec-tools.svg?branch=master)](https://travis-ci.org/eugenekolo/sec-tools) ![As seen on TV](http://forthebadge.com/images/badges/as-seen-on-tv.svg)
 
 Curated collection of tools for security research, CTFs, and fun, that I enjoy. Similar to zardus's ctf-tools, but with a more general focus on security.
 
@@ -70,7 +70,7 @@ sec-tools install binary/apktool
 apktool --version
 ```
 
-## Containers for quick play
+## Virtualization ![forthebadge](https://www.eugenekolo.com/blog/content/images/rainbow.svg)
 ### Docker
 ```
 git clone https://github.com/eugenekolo/sec-tools.git

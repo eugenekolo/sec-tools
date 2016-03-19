@@ -6,6 +6,7 @@
 * stuff that uses wine doesn't actually install
 * Add uninstall + warning if already installed
 * add check into sec-tools to not multiple add CTF_ROOT and PATH 
+* make installs quiet by default or go into log
 
 ## More than maybe
 * add HashPump, angr, Python_Pin, taintgrid
@@ -17,6 +18,7 @@
 ## Maybe?
 * add virtualenv + rbenv for things
 * install qemu bins to $CTF_ROOT/bin
+* fix afl to not reinstall qemu if qemu is already installed
 
 ## Things that are failing/broken
 * stegdetect install is broken
