@@ -64,10 +64,10 @@ To use, do:
 sec-tools list
 
 # install whatever <category/tool-name>
-sec-tools install binary/radare2
+sec-tools install binary/apktool
 
 # use the tool - your path is automatically configured
-rabin2 -e /bin/ls
+apktool --version
 ```
 
 ## Adding Tools
@@ -83,4 +83,4 @@ As for sec-tools itself, it is "starware".
 If you find it useful, star it on github (https://github.com/eugenekolo/sec-tools).
 
 ## Acknowledgements
-Built upon [ctf-tools](github.zom/zardus/ctf-tools). Be sure to check them out.
+Built upon [ctf-tools](https://github.com/zardus/ctf-tools). Be sure to check them out.
