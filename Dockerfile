@@ -1,5 +1,5 @@
 from ubuntu:trusty
-maintainer eugene@eugenekolo.com
+maintainer eugene@kolobyte.com
 
 RUN adduser grill
 COPY .git /home/grill/sec-tools/.git

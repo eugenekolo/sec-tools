@@ -7,6 +7,8 @@
 * Add uninstall + warning if already installed
 * add check into sec-tools to not multiple add CTF_ROOT and PATH 
 * make installs quiet by default or go into log
+* Speed up 2x or more would be great
+* figure out what's causing perl5 to appear in /home
 
 ## More than maybe
 * add HashPump, angr, Python_Pin, taintgrid
