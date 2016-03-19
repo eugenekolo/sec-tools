@@ -1,4 +1,4 @@
-# sec-tools [![Build Status](https://travis-ci.org/eugenekolo/sec-tools.svg?branch=master)](https://travis-ci.org/eugenekolo/sec-tools) ![As seen on TV](http://forthebadge.com/images/badges/as-seen-on-tv.svg)
+# sec-tools [![Build Status](https://travis-ci.org/eugenekolo/sec-tools.svg?branch=master)](https://travis-ci.org/eugenekolo/sec-tools) ![Amazing](https://img.shields.io/badge/amazing-100%-ff33dd.svg)
 
 Curated collection of tools for security research, CTFs, and fun, that I enjoy. Similar to zardus's ctf-tools, but with a more general focus on security.
 
@@ -52,7 +52,7 @@ Installers for the following tools are included:
 | web | [net-creds](https://github.com/DanMcInerney/net-creds) | Sniffs sensitive data from interface or pcap | <!--test-->
 | web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. | <!--test-->
 
-## Usage
+## Usage ❤️‍❤️‍
 To use, do:
 
 ```bash
@@ -70,15 +70,16 @@ sec-tools install binary/apktool
 apktool --version
 ```
 
-## Virtualization ![forthebadge](https://www.eugenekolo.com/blog/content/images/rainbow.svg)
-### Docker
+## Virtualization and Containers
+Ready to launch, will install every tool for you. Grab a :coffee: while making these.
+### Docker ![Docker Badge](https://img.shields.io/badge/container-docker-blue.svg)
 ```
 git clone https://github.com/eugenekolo/sec-tools.git
 docker build -t sec-tools .
 docker run -it sec-tools
 ```
 
-### Vagrant
+### Vagrant ![Vagrant Badge](https://img.shields.io/badge/container-vagrant-orange.svg)
 ```
 wget https://raw.githubusercontent.com/eugenekolo/sec-tools/master/Vagrantfile
 vagrant up
@@ -92,7 +93,7 @@ To add a tool (say, named *toolname*), do the following:
 2. Create a `category\toolname` directory.
 3. Create an `install-ctf.sh` script. It's a simple bash script, look at already made ones for example.
 
-## License
+## License :star2::star2:
 The individual tools are all licensed under their own licenses.
 As for sec-tools itself, it is "starware".
 If you find it useful, star it on github (https://github.com/eugenekolo/sec-tools).

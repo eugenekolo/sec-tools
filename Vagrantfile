@@ -1,11 +1,12 @@
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
+# -*- mode: ruby -*- vi: set ft=ruby :
 
 $bootstrap = <<SCRIPT
 sudo apt-get update
-sudo apt-get install git
+sudo apt-get install -y git
 git clone https://github.com/eugenekolo/sec-tools.git /home/vagrant/sec-tools/
-/home/vagrant/sec-tools/sec-tools setup && source ~/.bashrc
+/home/vagrant/sec-tools/sec-tools setup
+export CTF_ROOT="/home/vagrant/sec-tools"
+./sec-tools/sec-tools install all
 SCRIPT
 
 Vagrant.configure(2) do |config|

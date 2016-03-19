@@ -19,6 +19,7 @@ RUN bash -c "source /home/grill/.bashrc"
 WORKDIR /home/grill/
 RUN bash -c "source /etc/bash_completion.d/virtualenvwrapper && mkvirtualenv grill"
 RUN echo "workon grill" >> /home/grill/.bashrc
-RUN sec-tools install all
+ENV CTF_ROOT /home/grill/sec-tools
+RUN ./sec-tools/sec-tools install all
 
 ENTRYPOINT bash -i
