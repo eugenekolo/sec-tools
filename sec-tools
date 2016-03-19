@@ -66,9 +66,9 @@ case $ACTION in
         log "[+] [$TOOL] Installing."
         if ./install-ctf.sh
         then
-            log "[+] Install finished"
+            log "[+] [$TOOL] Install finished"
         else
-            log "[-] Install FAILED"
+            log "[-] [$TOOL] Install FAILED"
             exit 1
         fi
         ;;

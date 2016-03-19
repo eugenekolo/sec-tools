@@ -3,3 +3,5 @@ curl http://wiki.qemu-project.org/download/qemu-2.4.0.1.tar.bz2 | tar xj
 cd qemu-2.4.0.1
 ./configure --target-list=i386-softmmu,arm-softmmu,x86_64-softmmu
 make -j4
+make install
+

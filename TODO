@@ -1,19 +1,21 @@
 # TODO
 
 ## High level
-* Add vagrant + docker
 * Only testing installs ATM. Not running them.
+* Test single installations to hunt ninja dependencies
+* stuff that uses wine doesn't actually install
 * Add uninstall + warning if already installed
+* add check into sec-tools to not multiple add CTF_ROOT and PATH 
 
 ## More than maybe
-* add check into sec-tools to not multiple add CTF_ROOT and PATH 
-* add HashPump, angr, Python_Pin, taingrid
+* add HashPump, angr, Python_Pin, taintgrid
 * add villoc, valgrind, volatility, yafu 
 * add wireshark, sublime text, pwntools, sonicvisualizer 
 * add pngtools, exiftool, fsck
 
 ## Maybe?
 * add virtualenv + rbenv for things
+* install qemu bins to $CTF_ROOT/bin
 
 ## Things that are failing/broken
-* add pathgrind to /bin
+* stegdetect install is broken
