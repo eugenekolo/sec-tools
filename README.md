@@ -26,14 +26,16 @@ Installers for the following tools are included:
 | crypto | [foresight](https://github.com/ALSchwalm/foresight) | A tool for predicting the output of random number generators. To run, launch "foresee". | <!--test-->
 | crypto | [hashid](https://code.google.com/p/hash-identifier/source/checkout) | Simple hash algorithm identifier. | <!--test-->
 | crypto | [msieve](https://sourceforge.net/projects/msieve/) | Factor primes, such as for RSA. | <!--test-->
-| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks | <!--hangs-->
+| crypto | [padbuster](https://github.com/GDSSecurity/PadBuster) | Automated script for performing Padding Oracle attacks | <!--test-->
 | crypto | [pkcrack](https://www.unix-ag.uni-kl.de/~conrad/krypto/pkcrack.html) | PkZip encryption cracker. | <!--test-->
 | crypto | [python-paddingoracle](https://github.com/mwielgoszewski/python-paddingoracle) | Padding oracle attack automation. | <!--test-->
 | crypto | [ssh_decoder](https://github.com/jjyg/ssh_decoder) | A tool for decoding ssh traffic. | <!--test-->
+| crypto | [yafu](https://sourceforge.net/projects/yafu/) | Fast prime factorization. | <!--test-->
 | crypto | [xortool](https://github.com/hellman/xortool) | XOR analysis tool. | <!--test-->
 | fuzzers | [afl](http://lcamtuf.coredump.cx/afl/) | State-of-the-art fuzzer. | <!--test-->
 | fuzzers | [pathgrind](https://github.com/codelion/pathgrind) | Path based fuzzer. | <!--test-->
 | stego | [ElectronicColoringBook](https://doegox.github.io/ElectronicColoringBook/) | Colorize data file according to repetitive chunks. | <!--test-->
+| stego | [exiftool](http://www.sno.phy.queensu.ca/~phil/exiftool/) | Examine EXIF/meta data of files. | <!--test-->
 | stego | [lsbsteg](https://github.com/RobinDavid/LSB-Steganography) | stego files into images using the Least Significant Bit. | <!--test-->
 | stego | [poppler](http://poppler.freedesktop.org/) | A suite of tools to help take apart and work with PDF files | <!--test-->
 | stego | [steganabara](http://www.caesum.com/handbook/stego.htm) | Another image steganography solver. | <!--test-->
@@ -43,11 +45,14 @@ Installers for the following tools are included:
 | tools | [bruteforce](http://github.com/eugenekolo/sec-tools) | A simple starter script for bruteforcing | <!--test-->
 | tools | [entropy](http://github.com/eugenekolo/sec-tools) | A simple tool to test entropy of a file | <!--test-->
 | tools | [extundelete](http://extundelete.sourceforge.net/) | Recover deleted files from an ext3 or ext4 partition. | <!--test-->
+| tools | [pngtools](http://www.stillhq.com/pngtools/) | Dump info on a PNG file. | <!--test-->
 | tools | [pyunpack](https://github.com/kholia/exetractor-clone) | Unpacker for packed Python executables | <!--test-->
 | tools | [shoe](http://github.com/eugenekolo/sec-tools) | A simple tool to assist with TCP remote communication | <!--test-->
+| tools | [swftools](http://www.swftools.org/) | Tools for reading, creating, and working with swf files. | <!--test-->
 | tools | [wordlist](https://github.com/eugenekolo/win-sec-tools/releases/download/v1.0/wordlist.txt.gz) | A huge wordlist to use for cracking or whatever. | <!--test-->
 | web | [burpsuite](http://portswigger.net/burp) | Web proxy to do naughty web stuff. | <!--test-->
-| web | [dirs3arch](https://github.com/maurosoria/dirs3arch) | Web path scanner. | <!--test-->
+| web | [dirsearch](https://github.com/maurosoria/dirs3arch) | Web path scanner. | <!--test-->
+| web | [hashpump](https://github.com/bwall/HashPump) | A tool for exploiting hash extension vulnerabilities. | <!--test-->
 | web | [mitmproxy](http://mitmproxy.org/) | A programmable and interactive HTTP proxy useful | <!--test-->
 | web | [net-creds](https://github.com/DanMcInerney/net-creds) | Sniffs sensitive data from interface or pcap | <!--test-->
 | web | [sqlmap](http://sqlmap.org/) | SQL injection automation engine. | <!--test-->
@@ -58,7 +63,7 @@ To use, do:
 ```bash
 # download and set up
 git clone https://github.com/eugenekolo/sec-tools.git
-./sec-tools setup && source ~/.bashrc
+./sec-tools/sec-tools setup && source ~/.bashrc
 
 # list the available category/tools
 sec-tools list

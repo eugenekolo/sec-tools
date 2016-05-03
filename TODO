@@ -11,10 +11,14 @@
 * figure out what's causing perl5 to appear in /home
 
 ## More than maybe
-* add HashPump, angr, Python_Pin, taintgrid
-* add villoc, valgrind, volatility, yafu 
-* add wireshark, sublime text, pwntools, sonicvisualizer 
-* add pngtools, exiftool, fsck
+* add angr, Python_Pin, taintgrid
+* add villoc, valgrind, volatility
+* add fsck, sonicvisualizer
+* add commix, idapatcher, jadx, xposed
+* add ClassNameDeobfuscator, frida, droidbox, pwntools
+
+### Add to full edition?
+* add wireshark, sublime text
 * add virtualbox, cuckoo, quassel
 
 ## Maybe?
