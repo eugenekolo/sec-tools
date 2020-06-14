@@ -1,5 +1,7 @@
 # sec-tools [![Build Status](https://travis-ci.org/eugenekolo/sec-tools.svg?branch=master)](https://travis-ci.org/eugenekolo/sec-tools) ![Amazing](https://img.shields.io/badge/amazing-100%-ff33dd.svg)
 
+**NO LONGER MAINTAINED**
+
 Curated collection of tools for security research, CTFs, and fun, that I enjoy. Similar to zardus's ctf-tools, but with a more general focus on security.
 
 Installers for the following tools are included:
